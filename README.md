@@ -37,7 +37,17 @@ The differential expression input comes from my [TCGA-BRCA gene expression analy
 
 ## Key Findings
 
-<!-- Fill in after re-running the notebook with the corrected inputs -->
+- **4,225** differentially expressed genes (FDR < 0.05, |log2FC| > 1); the 50 most up- and 50 most downregulated were queried.
+- **46 of 100** genes have known drug interactions in DGIdb (27 upregulated, 19 downregulated).
+- **816** drug–gene interactions involving **720** unique drugs; 213 have a defined mechanism.
+- Most druggable genes: **PLK1** (190 drugs), **TOP2A** (132), **BIRC5** (66), NPY2R, MMP1 and GRM4.
+- **129 direction-aware candidates** that would push a gene back towards normal, across 17 genes (104 inhibit upregulated genes, 25 activate downregulated genes).
+- The approach recovers established cancer drugs: TOP2A inhibitors such as **doxorubicin** (a standard breast cancer chemotherapy) and etoposide, and the PLK1 inhibitor **volasertib**, which supports the method.
+- Drugs hitting more than one upregulated gene include MMP inhibitors (**marimastat, batimastat**, doxycycline) for MMP1 and MMP13, and GSK579289A for NEK2 and PLK1.
+
+| Figure | |
+| --- | --- |
+| ![Top druggable genes](figures/top15_genes_drug_interactions.png) | ![Gene–drug network](figures/gene_drug_network.png) |
 
 ---
 
